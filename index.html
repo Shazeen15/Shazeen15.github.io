@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/treasure.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <title>2021 Treasure HUnt</title>
+    <script type="text/javascript" src="/treasure.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="top">2021 Treasure Hunt</h1>
+    </header>
+
+    <div class="container1">
+      <section class="game-rules">
+        <h3>Game Rules</h3>
+        <ul>
+          <li>Find a treasure</li>
+          <li>Don't pick a bomb</li>
+          <li>Have fun</li>
+          <li>You have 5 Turns</li>
+        </ul>
+      </section>
+      <section class="chest-picture">
+        <img
+          height="200"
+          width="200"
+          src="treasure.png"
+          class="treasure-chest"
+        />
+      </section>
+    </div>
+
+    <div class="container1">
+      <div id="counter"></div>
+      <div id="gameboard">
+        <table border="1">
+          <tr>
+            <td id="0" onclick="treasure(0)">?</td>
+            <td id="1" onclick="treasure(1)">?</td>
+            <td id="2" onclick="treasure(2)">?</td>
+            <td id="3" onclick="treasure(3)">?</td>
+            <td id="4" onclick="treasure(4)">?</td>
+          </tr>
+          <tr>
+            <td id="5" onclick="treasure(5)">?</td>
+            <td id="6" onclick="treasure(6)">?</td>
+            <td id="7" onclick="treasure(7)">?</td>
+            <td id="8" onclick="treasure(8)">?</td>
+            <td id="9" onclick="treasure(9)">?</td>
+          </tr>
+          <tr>
+            <td id="10" onclick="treasure(10)">?</td>
+            <td id="11" onclick="treasure(11)">?</td>
+            <td id="12" onclick="treasure(12)">?</td>
+            <td id="13" onclick="treasure(13)">?</td>
+            <td id="14" onclick="treasure(14)">?</td>
+          </tr>
+          <tr>
+            <td id="15" onclick="treasure(15)">?</td>
+            <td id="16" onclick="treasure(16)">?</td>
+            <td id="17" onclick="treasure(17)">?</td>
+            <td id="18" onclick="treasure(18)">?</td>
+            <td id="19" onclick="treasure(19)">?</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="container1">
+      <iframe
+        id="same"
+        src="https://giphy.com/embed/iK7wLfAcmB5Ic"
+        width="480"
+        height="333"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="container1">
+      <iframe
+        id="bomb"
+        src="https://giphy.com/embed/3osxYCsLd9qgsgqpwI"
+        width="480"
+        height="480"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="container1">
+      <iframe
+        id="treasure"
+        src="https://giphy.com/embed/l0IynKSD9UkNZ88a4"
+        width="480"
+        height="320"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="container1">
+      <iframe
+        id="basic"
+        src="https://giphy.com/embed/2WdRd6ZhFxJTzUnvGq"
+        width="480"
+        height="270"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="container1">
+      <button class="restartBtn" type="button" onclick="location.reload()">
+        Restart Game
+      </button>
+    </div>
+
+    <footer class="container1 footer">
+      <a href="#top">Click me!</a>
+      <a
+        target="_blank"
+        href="https://www.google.com/search?client=safari&rls=en&q=treasure+hut&ie=UTF-8&oe=UTF-8"
+        >Treasure Hunt Google Search</a
+      >
+      Shazeen Raymond
+    </footer>
+  </body>
+</html>

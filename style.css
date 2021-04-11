@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://images.unsplash.com/photo-1585924775990-bd3f24bbc72e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Patrick Hand", cursive;
+}
+
+header {
+  text-align: center;
+  color: aliceblue;
+}
+
+.game-rules {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2% 0;
+  align-items: center;
+}
+
+#counter {
+  color: aliceblue;
+  font-size: 10rem;
+}
+
+td {
+  padding: 40px;
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: lavender;
+}
+
+.chest-picture img {
+  animation: 3s infinite alternate chestTurn;
+}
+
+@keyframes chestTurn {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.restartBtn {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 2px 15%;
+  border: none;
+  background-color: aliceblue;
+  cursor: pointer;
+  font-family: "Patrick Hand", cursive;
+}
+
+.restartBtn:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+.footer {
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+}
+
+.footer a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+#same,
+#bomb,
+#treasure,
+#basic {
+  display: none;
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .container1 {
+    flex-direction: column;
+  }
+} */
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .container1 {
+    flex-direction: column;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  .chest-picture img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #counter {
+    font-size: 5rem;
+  }
+}
